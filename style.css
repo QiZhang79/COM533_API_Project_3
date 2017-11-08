@@ -10,7 +10,7 @@ body {
 	background-color: #f3f1f1;
     font-family: 'Slabo 27px', serif;
     font-size: 18px;
-
+	
 }
 
 /* Header */
@@ -74,15 +74,27 @@ p {
     display: block;
 	/*margin: auto;*/
 	margin: 30px 80px 30px 80px;
-	height: 400px;
-    background:#d5d1d1;
+	height: 500px;
+    background-image: url("./images/bk.jpg");
 }
 
 #temperature {
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 100px;
+	float: left;
+	padding: 90px 60px 30px 60px;
 }
 
+#icon {
+	float: left;
+	padding: 120px 60px 30px 200px;
+}
+
+#total_weather {
+	font-size: 30px;
+	padding-left: 130px;
+	float: left;
+}
 
 
 
