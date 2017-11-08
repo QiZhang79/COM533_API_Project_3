@@ -81,8 +81,8 @@ var main = function(){
 	  		var weather = cities[i]["weather"];
 
 	  		temp.append(main["temp"] + '°F');
-	  		total.append(weather["description"]);
 	  		icon.append('<img src="http://openweathermap.org/img/w/' + weather["icon"] + '.png" />');
+	  		total.append(weather["description"]);
 	  		output = true;
 	  		e.preventDefault();
 	  	}	
