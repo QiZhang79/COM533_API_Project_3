@@ -1,0 +1,100 @@
+
+/* RESET CSS */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Base */
+body {
+	background-color: #f3f1f1;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+	
+}
+
+/* Header */
+header {
+	background-color: #66cafd;
+	height: 90px;
+}
+
+h1 {
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 13px;
+	margin: auto;
+}
+
+h4 {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 5px;
+	margin: auto;
+}
+/* Content */
+/* Datetime */
+p {
+	text-align: center;
+	margin: auto;
+	padding-top: 15px;
+	color: #bfb2b2;
+	font-size: 13px;
+}
+
+/* Form */
+#user_form {
+	width: 360px;
+	display: block;
+	margin: auto;
+}
+
+.form_styling {
+	height: 25px;
+	padding-left: 15px;
+	border: none;
+	border-radius: 8px;
+    margin: 0 10px 0 10px;
+    width: 70px;
+}
+
+#submit, #reset {
+	margin-top: 30px;
+	margin-left: 10px;
+	font-size: 15px;
+	background-color: #77bbb1;
+	color: #ffffff;
+	padding: 5px;
+	box-shadow: 0 8px 16px 0 rgba(166,166,166,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Result Card */
+#result {
+    display: block;
+	/*margin: auto;*/
+	margin: 30px 80px 30px 80px;
+	height: 500px;
+    background-image: url("../images/bk.jpg");
+}
+
+#temperature {
+	color: #ffffff;
+	font-size: 100px;
+	float: left;
+	padding: 90px 60px 30px 60px;
+}
+
+#icon {
+	float: left;
+	padding: 120px 60px 30px 200px;
+}
+
+#total_weather {
+	font-size: 30px;
+	padding-left: 130px;
+	float: left;
+}
+
+
+
