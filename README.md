@@ -31,4 +31,7 @@ My weather application provides two basic features, inputing(optional) and outpu
 | Presentation of the finally workable project | 1. Improve HTML design, especially the result’s design ; <br>2. Test and prepare for the presentation      |   27 November 2017 |
 | Fully finished project | 1. Remove errors; <br>2. Polish User Interface design; <br>3. Adopt advices given in the presentation.      |   7 December 2017 |
 
+## What's New
+I set up template engine at first, and instead of responding with text when someone visits my root route, I’d like to respond with an HTML file. For this, I EJS (Embedded JavaScript), which is a templating language.
+> A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.
 
