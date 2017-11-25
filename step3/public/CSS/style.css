@@ -7,15 +7,17 @@
 
 /* Base */
 body {
-  background-color: #f3f1f1;
-    font-family: 'Slabo 27px', serif;
-    font-size: 18px;
-  
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../images/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Header */
 header {
-  background-color: #66cafd;
+  background-color: #6272805c;
   height: 90px;
 }
 
@@ -33,14 +35,28 @@ h4 {
   padding-top: 5px;
   margin: auto;
 }
-/* Content */
-/* Datetime */
-p {
-  text-align: center;
-  margin: auto;
-  padding-top: 15px;
-  color: #bfb2b2;
-  font-size: 13px;
+
+/* Container */
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
 }
 
 /* Form */
@@ -50,26 +66,62 @@ p {
   margin: auto;
 }
 
-.form_styling {
-  height: 25px;
-  padding-left: 15px;
-  border: none;
-  border-radius: 8px;
-    margin: 0 10px 0 10px;
-    width: 70px;
+.form_styling, p {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4b545f;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.form_styling:focus {
+  border-bottom:1px solid #ddd;
 }
 
 #submit, #reset {
-  margin-top: 30px;
+  background-color: #77bbb1;
+  border:2px solid #ddd;
+  padding:10px 30px;
+  width: 100%;
+  min-width: 350px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  /*margin-top: 30px;
   margin-left: 10px;
   font-size: 15px;
   background-color: #77bbb1;
   color: #ffffff;
   padding: 5px;
-  box-shadow: 0 8px 16px 0 rgba(166,166,166,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(166,166,166,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+
+#submit:hover {
+  border:2px solid #515151;
 }
 
 /* Result Card */
+p {
+  color: #E64A19;
+}
+
 #result {
     display: block;
   /*margin: auto;*/
