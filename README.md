@@ -9,14 +9,8 @@ My weather application provides two basic features, inputing(optional) and outpu
 (1)My app could call current data for one location
 - by city name:
   > `api.openweathermap.org/data/2.5/weather?q={city name}`
-- by city ID,
-  > `api.openweathermap.org/data/2.5/weather?id={xxxxxxx}`
-  
-  and I’ll adopt city.list.json(http://bulk.openweathermap.org/sample/) in my code;
-- by geographic coordinates,
-  > `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}`
-  
-  and I’ll also use Geolocation API to get users’ latitude and longitude.
+- by zipcode,
+  > `api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}`
 
 (2) My application will display current temperature and rain information in the results.
 
