@@ -1,0 +1,154 @@
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../images/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+  background-color: #6272805c;
+  height: 90px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 13px;
+  margin: auto;
+}
+
+h4 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+}
+
+/* Container */
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+}
+
+/* Form */
+#user_form {
+  width: 360px;
+  display: block;
+  margin: auto;
+}
+
+.form_styling, p {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4b545f;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.form_styling:focus {
+  border-bottom:1px solid #ddd;
+}
+
+.submitButton {
+  display: block; 
+  clear: both; 
+  width: 360px;
+}
+
+#citySubmit, #zipSubmit {
+  background-color: #77bbb1;
+  border:2px solid #ddd;
+  padding:10px 30px;
+  min-width: 160px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#citySubmit {
+  float: left;
+}
+
+#zipSubmit {
+  float: right;
+}
+
+#submit:hover {
+  border:2px solid #515151;
+}
+
+/* Result Card */
+.result p {
+  color: #ffffff;
+}
+
+.result {
+  display: block;
+  /*margin: auto;*/
+  margin: 30px 80px 30px 80px;
+  height: 300px;
+  background-color: #6272805c;
+}
+
+/*#temperature {
+  color: #ffffff;
+  font-size: 100px;
+  float: left;
+  padding: 90px 60px 30px 60px;
+}
+
+#icon {
+  float: left;
+  padding: 120px 60px 30px 200px;
+}
+
+#total_weather {
+  font-size: 30px;
+  padding-left: 130px;
+  float: left;
+}*/

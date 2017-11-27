@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1>How is the Weather?</h1>
+    <h4 class="test">Instructor: Prof. Karl Stolley</h4>
+  </header>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="post" id="user_form">
+        <input name="searchWeather" type="text" class="form_styling" placeholder="Enter a City/Zipcode" required>
+        <div class="submitButton">
+          <button type="submit" formaction="/city" id="citySubmit">Submit City</button>
+          <button type="submit" formaction="/zipcode" id="zipSubmit">Submit Zipcode</button>
+        </div>      
+      </form>
+    </fieldset>
+  </div>
+  <div class="result">
+    <% if(weather !== null){ %>
+      <p><%= weather %></p>
+    <% } %>
+
+    <% if(error !== null){ %>
+      <p><%= error %></p>
+    <% } %>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="../public/js/index.js"></script>
+</html>
