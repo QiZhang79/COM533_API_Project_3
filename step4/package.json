@@ -1,7 +1,7 @@
 {
   "name": "step2",
   "version": "1.0.0",
-  "description": "Step2 for COM533 Final Project;",
+  "description": "Step4 for COM533 Final Project;",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
