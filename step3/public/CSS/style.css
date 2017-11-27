@@ -127,7 +127,7 @@ p {
   /*margin: auto;*/
   margin: 30px 80px 30px 80px;
   height: 500px;
-    background-image: url("../images/bk.jpg");
+  background-image: url("../images/bk.jpg");
 }
 
 #temperature {

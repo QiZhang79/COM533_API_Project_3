@@ -15,16 +15,18 @@
     <fieldset>
       <form action="/" method="post" id="user_form">
         <input name="city" type="text" class="form_styling" placeholder="Enter a City" required>
-        <input type="submit" class="ghost-button" id="submit" value="Get Weather">
+       <input type="submit" class="ghost-button" id="submit" value="Get Weather">
       </form>
-      <% if(weather !== null){ %>
-        <p><%= weather %></p>
-      <% } %>
-
-      <% if(error !== null){ %>
-        <p><%= error %></p>
-      <% } %>
     </fieldset>
+  </div>
+  <div class="result">
+    <% if(weather !== null){ %>
+      <p><%= weather %></p>
+    <% } %>
+
+    <% if(error !== null){ %>
+      <p><%= error %></p>
+    <% } %>
   </div>
 </body>
 </html>
