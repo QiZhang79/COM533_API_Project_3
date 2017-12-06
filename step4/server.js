@@ -17,32 +17,32 @@ app.get('/', function (req, res) {
   res.render('index.ejs', {weather: null, error: null});
 })
 
-// app.post('/', function (req, res) {
-//   let city = req.body.searchWeather;
-//   console.log(city);
-//   //If you use Celsius you’d add: units=metric and if you use Fahrenheit you’d use units=imperial.
-//   let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}` 
+app.post('/city', function (req, res) {
+  let city = req.body.searchWeather;
+  console.log(city);
+  //If you use Celsius you’d add: units=metric and if you use Fahrenheit you’d use units=imperial.
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}` 
 
-//   request(url, function (err, response, body) {
-//     if(err){
-//       res.render('index', {weather: null, error: 'Error, please try again'});
-//     } else {
-//       let weather = JSON.parse(body);
-//       if(weather.main == undefined){
-//         res.render('index', {weather: null, error: 'Invalid city name, please try again'});
-//       } else {
-//         weather.weatherText = `It's ${weather.main.temp} degrees and ${weather.weather[0].main} in ${weather.name}!`;
-//         weather.weatherIcon = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
-//         console.log(weather.weatherIcon);
+  request(url, function (err, response, body) {
+    if(err){
+      res.render('index', {weather: null, error: 'Error, please try again'});
+    } else {
+      let weather = JSON.parse(body);
+      if(weather.main == undefined){
+        res.render('index', {weather: null, error: 'Invalid city name, please try again'});
+      } else {
+        weather.weatherText = `It's ${weather.main.temp} degrees and ${weather.weather[0].main} in ${weather.name}!`;
+        weather.weatherIcon = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+        console.log(weather.weatherIcon);
 
-//         res.render('index', {weather: weather, error: null});
-//       }
-//     }
-//   });
-// });
+        res.render('index', {weather: weather, error: null});
+      }
+    }
+  });
+});
 
 
-app.post('/', function (req, res) {
+app.post('/zipcode', function (req, res) {
   let zip = req.body.searchWeather;
   console.log('zip');
   let zipurl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zip}&units=imperial&appid=${apiKey}`;
