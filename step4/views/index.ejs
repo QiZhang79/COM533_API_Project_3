@@ -24,7 +24,9 @@
   </div>
   <div class="result">
     <% if(weather !== null){ %>
-      <p><%= weather %></p>
+      <img class="icon" src="<%= weather.weatherIcon %>" />
+      <p class="mainInfo"><%= weather.weatherMainText %></p>
+      <p class="temp"><%= weather.weatherTempText %></p>
     <% } %>
 
     <% if(error !== null){ %>
@@ -33,5 +35,4 @@
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="../public/js/index.js"></script>
 </html>

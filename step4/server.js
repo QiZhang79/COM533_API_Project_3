@@ -31,8 +31,9 @@ app.post('/city', function (req, res) {
       if(weather.main == undefined){
         res.render('index', {weather: null, error: 'Invalid city name, please try again'});
       } else {
-        weather.weatherText = `It's ${weather.main.temp} degrees and ${weather.weather[0].main} in ${weather.name}!`;
-        weather.weatherIcon = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+        weather.weatherMainText = `${weather.weather[0].main}`;
+        weather.weatherTempText = `${weather.main.temp} degrees`;
+        weather.weatherIcon = `https://process.filestackapi.com/AhTgLagciQByzXpFGRI0Az/resize=width:120/http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
         console.log(weather.weatherIcon);
 
         res.render('index', {weather: weather, error: null});
@@ -59,6 +60,7 @@ app.post('/zipcode', function (req, res) {
       } else {
         console.log(weather.list[0].main.temp); 
         weather.weatherText = `It's ${weather.list[0].main.temp} degrees.`;
+        weather.weatherIcon = `http://openweathermap.org/img/w/${weather.list[0].weather[0].icon}.png`;
         res.render('index', {weather: weather, error: null});
       }
     }
