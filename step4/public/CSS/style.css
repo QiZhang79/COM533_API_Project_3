@@ -98,7 +98,7 @@ fieldset {
   width: 360px;
 }
 
-#citySubmit, #zipSubmit {
+#submit{
   background-color: #77bbb1;
   border:2px solid #ddd;
   padding:10px 30px;
@@ -110,13 +110,11 @@ fieldset {
   transition: all 0.1s ease-in-out;
 }
 
-#citySubmit {
-  float: left;
+#submit {
+  display: block;
+  margin: auto;
 }
 
-#zipSubmit {
-  float: right;
-}
 
 #submit:hover {
   border:2px solid #515151;
@@ -145,20 +143,4 @@ fieldset {
   text-align: center;
 }
 
-/*#temperature {
-  color: #ffffff;
-  font-size: 100px;
-  float: left;
-  padding: 90px 60px 30px 60px;
-}
 
-#icon {
-  float: left;
-  padding: 120px 60px 30px 200px;
-}
-
-#total_weather {
-  font-size: 30px;
-  padding-left: 130px;
-  float: left;
-}*/
